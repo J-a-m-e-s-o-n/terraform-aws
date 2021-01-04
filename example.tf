@@ -22,6 +22,9 @@ resource "aws_eip" "ip" {
   instance = aws_instance.example.id
 }
 
+// Can be used with output commands
+// ex: terraform output ip will output IP address
+
 output "ami" {
   value = aws_instance.example.ami
 }
